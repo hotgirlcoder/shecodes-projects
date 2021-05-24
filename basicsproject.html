@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 SheCodes 💖</title>
+    <style>
+        h1 {
+            color: #ce897b;
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 500px;
+        }
+
+        h2 {
+            color: #e4a199;
+            text-align: center;
+            font-weight: thin;
+            border: 2px solid #e4a199;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+       
+        body {
+            display: block;
+            margin: 20px 300px;
+            background: linear-gradient(to top, #c7b0bc 0%, #fff 100%);
+        }
+
+        hr {
+            background: #ce897b;
+            }
+        em {
+          color: #ecb7bf;  
+        }
+        button {
+            color: #ffc0cb;
+            background: #fff;
+            display: block;
+            margin: 0 auto;
+            transition: 200ms;
+            border: #ffc0cb;
+            border-radius: 4px;
+            padding: 10px;
+            box-shadow: 5px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #ffc0cb;
+            color: #fff;
+            cursor: pointer;
+            border: #ffc0cb;
+            border-radius: 4px;
+
+        }
+        
+        p {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            font-size: 26px;
+            color: #494545;
+            line-height: 0em;
+        }
+
+        div {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            font-size: 24px;
+            color: #494545;
+        }
+        
+        strong {
+            color: #fac7cf;
+        }
+
+        a { 
+            display: block;
+            margin: 0 auto;
+            text-decoration: none;
+            color: #df738e;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .GrandBudapest {
+            color: #ffc0cb;
+        }
+    </style>
+</head>
+<body>
+    <h1> 🌸 The Colour Pink 🌸</h1>
+    <h2> It's the prettiest colour </h2>
+    <hr />
+    <p>
+        <span> The best shade of pink is <em>~MILLENNIAL PINK~</em> <div><strong>Rose quartz</strong> is another beautiful option 🩰 </div> </span>
+    </p>
+    <br />
+    <img src="https://blog.sampleboard.com/wp-content/uploads/2017/06/jpg-millennial-pink-png.jpg" />
+    <br />
+    <p>
+        An exerpt from sampleboard blog: 
+
+        <div>
+            This soft and friendly color trend has been widely documented in the media such as The Guardian, New York Magazine and The Times. It even came to be one of the highlight motifs in Wes Anderson's avant-garde movie <span class= "GrandBudapest">The Grand Budapest Hotel.</span>
+        </div>
+
+    </p>
+    <a href="https://blog.sampleboard.com/design-craze-millennial-pink/" target="_blank"> Read more about Millennial Pink </a>
+    <br />
+    <br />
+    <button>Sign up for our newsletter</button>
+
+    <script>
+        function newsletter() {
+            let favoriteColor = prompt("What is your favorite color?");
+            let name = prompt("What is your first name?");
+            if (favoriteColor ==="pink") {
+                alert("Hi, " + name + ". Glad you're part of the pink army! We'll be in touch."); 
+            }
+             else { 
+                 alert("Sorry, " + name + ". You can't be part of the pink army."); 
+                }
+        }
+
+        let button = document.querySelector("button");
+        button.addEventListener("click", newsletter)
+
+    </script>
+
+</body>
+</html>
